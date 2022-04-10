@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="font/bootstrap-icons.css" />
+    <title>List</title>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <header>
+      <h1 class="text-center display-3">
+        <strong>Bootstrap Components</strong>
+      </h1>
+      <h1 class="text-center display-1">
+        <strong>Lists and List Groups</strong>
+      </h1>
+    </header>
+
+    <!-- Simple List  -->
+
+    <h2 class="display-4 mt-5"><small>1.</small> Simple List</h2>
+
+    <div class="card m-3 p-2">
+      <ul class="bg-warning list-unstyled">
+        <li>This is a list.</li>
+        <li>It appears completely unstyled.</li>
+        <li>Structurally, it's still a list.</li>
+        <li>However, this style only applies to immediate child elements.</li>
+        <li>
+          Nested lists:
+          <ul>
+            <li>are unaffected by this style</li>
+            <li>will still show a bullet</li>
+            <li>and have appropriate left margin</li>
+          </ul>
+        </li>
+        <li>This may still come in handy in some situations.</li>
+      </ul>
+    </div>
+
+    <!-- Inline List  -->
+
+    <h2 class="display-4 mt-5"><small>2.</small> Inline List</h2>
+
+    <div class="card m-3 p-2">
+      <ul class="list-inline bg-light">
+        <li class="list-inline-item text-danger">This is a list item.</li>
+        <li class="list-inline-item text-primary">And another one.</li>
+        <li class="list-inline-item text-info">But they're displayed inline.</li>
+      </ul>
+    </div>
+
+    <!-- //////////////////////////////////// -->
+
+    <!-- List group  -->
+
+    <h2 class="display-4 mt-5"><small>3.</small> List group</h2>
+
+    <div class="card m-3 p-2">
+
+      <h2 class="display-6 mt-5"><small>3.1</small> Basic group</h2>
+
+      <ul class="list-group">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+
+      <!-- Active items  -->
+
+      <h2 class="display-6 mt-5"><small>3.2</small> Active items</h2>
+
+      <ul class="list-group bg-light">
+        <li class="list-group-item active" aria-current="true">An active item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+
+      <!-- Disabled items  -->
+
+      <h2 class="display-6 mt-5"><small>3.3</small> Disabled items</h2>
+
+      <ul class="list-group">
+
+        <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+
+      <!-- Links and buttons  -->
+
+      <h2 class="display-6 mt-5"><small>3.4</small> Links and buttons</h2>
+
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          The current link item
+        </a>
+        <a href="#" class="list-group-item list-group-item-action"
+          >A second link item</a
+        >
+        <a href="#" class="list-group-item list-group-item-action"
+          >A third link item</a
+        >
+        <a href="#" class="list-group-item list-group-item-action"
+          >A fourth link item</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action disabled"
+          tabindex="-1"
+          aria-disabled="true"
+          >A disabled link item</a
+        >
+      </div>
+
+      <!-- Flush  -->
+
+      <h2 class="display-6 mt-5"><small>3.5</small> Flush</h2>
+
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+
+      <!-- Numbered  -->
+
+      <h2 class="display-6 mt-5"><small>3.6</small> Numbered</h2>
+
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Cras justo odio</li>
+      </ol>
+
+      <!-- Contextual classes  -->
+
+      <h2 class="display-6 mt-5"><small>3.7</small> Contextual classes</h2>
+
+      <ul class="list-group">
+        <li class="list-group-item">A simple default list group item</li>
+        <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+        <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+        <li class="list-group-item list-group-item-success">A simple success list group item</li>
+        <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+        <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+        <li class="list-group-item list-group-item-info">A simple info list group item</li>
+        <li class="list-group-item list-group-item-light">A simple light list group item</li>
+        <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+      </ul>
+
+      <!-- Checkboxes and radios  -->
+
+      <h2 class="display-6 mt-5"><small>3.8</small> Checkboxes and radios</h2>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
+          First checkbox
+        </li>
+        <li class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
+          Second checkbox
+        </li>
+        <li class="list-group-item">
+          <input
+            class="form-check-input me-1"
+            type="checkbox"
+            value=""
+            aria-label="..."
+          />
+          Third checkbox
+        </li>
+        <li class="list-group-item">
+          <input
+            class="form-check-input me-1"
+            type="checkbox"
+            value=""
+            aria-label="..."
+          />
+          Fourth checkbox
+        </li>
+        <li class="list-group-item">
+          <input
+            class="form-check-input me-1"
+            type="checkbox"
+            value=""
+            aria-label="..."
+          />
+          Fifth checkbox
+        </li>
+      </ul>
+
+      <div class="list-group">
+        <label class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" />
+          First checkbox
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" />
+          Second checkbox
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" />
+          Third checkbox
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" />
+          Fourth checkbox
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="" />
+          Fifth checkbox
+        </label>
+      </div>
+
+      <!--? Container End -->
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

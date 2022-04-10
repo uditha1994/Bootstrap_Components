@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="font/bootstrap-icons.css" />
+    <title>Navbar</title>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <header>
+      <h1 class="text-center display-3">
+        <strong>Bootstrap Components</strong>
+      </h1>
+      <h1 class="text-center display-1">
+        <strong>Navbar</strong>
+      </h1>
+    </header>
+
+    <div class="container">
+
+      <h2 class="display-4 mt-5"><small>1.</small> Example</h2>
+
+      <div class="card m-3 p-2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class=".navbar-brand text-primary" href="#">My-Media</a>
+            <button
+              class=".navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class=".navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link disabled"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Disabled</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Color schemes  -->
+
+      <h2 class="display-4 mt-5"><small>2.</small>Color schemes</h2>
+
+      <div class="card m-3 p-2">
+        <nav class="navbar navbar-dark bg-dark m-2">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar dark</a>
+            <button class="navbar-toggler" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+        <nav class="navbar navbar-dark bg-primary m-2">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar primary</a>
+            <button class="navbar-toggler" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- navbar-light with specific color -->
+        <nav class="navbar navbar-light m-2" style="background-color: #e3f2fd">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar custom color</a>
+            <button class="navbar-toggler" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar container</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Placement  -->
+
+      <h2 class="display-4 mt-5"><small>3.</small>Placement</h2>
+
+      <div class="card m-3 p-2">
+        <!-- default -->
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Default</a>
+          </div>
+        </nav>
+        <!-- fixed-top  -->
+        <nav class="navbar navbar-light bg-light fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fixed top</a>
+          </div>
+        </nav>
+        <!--fixed-bottom  -->
+        <nav class="navbar navbar-light bg-light fixed-bottom">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fixed bottom</a>
+          </div>
+        </nav>
+        <!--sticky-top  -->
+        <nav class="navbar navbar-light bg-light sticky-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sticky top</a>
+          </div>
+        </nav>
+      </div>
+      <!--? Container End -->
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

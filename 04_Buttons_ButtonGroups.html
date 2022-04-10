@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="font/bootstrap-icons.css" />
+  <title>Buttons</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="text-center display-1">
+      <strong>Bootstrap Components</strong>
+      <h1 class="text-center display-2">Buttons & Button Groups</h1>
+    </h1>
+  </header>
+
+  <div class="container">
+    <!-- Buttons  -->
+
+    <h2 class="display-3 mt-5"><small>1.</small> Buttons</h2>
+
+    <!-- Alerts Example -->
+
+    <h2 class="display-4 mt-5"><small>1.1</small> Example:</h2>
+
+    <div class="card p-3 bg-light">
+      <div class="container">
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+        <br>
+
+        <!-- Button tags -->
+
+        <a class="btn btn-info" role="button" href="#">Link</a>
+        <button type="submit" class="btn btn-warning">Button</button>
+        <input type="button" value="OK" class="btn btn-primary" />
+        <input type="submit" value="Login" class="btn btn-success" />
+        <input type="reset" value="Reset" class="btn btn-danger" />
+      </div>
+    </div>
+
+    <!-- Outline buttons -->
+
+    <h2 class="display-4 mt-5"><small>1.2</small> Outline buttons</h2>
+
+    <div class="card p-3 bg-light">
+      <div class="container">
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+      </div>
+    </div>
+
+    <!-- Sizes -->
+
+    <h2 class="display-4 mt-5"><small>1.3</small> Sizes</h2>
+
+    <div class="card p-3 bg-light">
+      <div class="container">
+        <button type="button" class="btn btn-lg btn-primary">Large button</button>
+        <button type="button" class="btn btn-lg btn-secondary">Large button</button>
+        <button type="button" class="btn btn-sm btn-primary">Small button</button>
+        <button type="button" class="btn btn-sm btn-secondary">Small button</button>
+      </div>
+    </div>
+
+    <!-- Disabled state -->
+
+    <h2 class="display-4 mt-5"><small>1.4</small> Disabled state</h2>
+
+    <div class="card p-3 bg-light">
+      <div class="container">
+        <button type="button" disabled class="btn btn-lg btn-primary">
+          Primary button
+        </button>
+        <button type="button" class="btn btn-secondary btn-lg" disabled>
+          Button
+        </button>
+        <a href="#" aria-disabled="true" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button">Primary link</a>
+        <a href="#" aria-disabled="true" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button">Link</a>
+      </div>
+    </div>
+
+    <!-- Block buttons
+ -->
+
+    <h2 class="display-4 mt-5"><small>1.5</small> Block buttons</h2>
+
+    <div class="card p-3 bg-light">
+      <div class="container">
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="button">Button-1</button>
+          <button class="btn btn-danger" type="button">Button-2</button>
+        </div>
+
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-warning" type="button">Button-3</button>
+          <button class="btn btn-info" type="button">Button-4</button>
+        </div>
+
+        <div class="d-grid gap-2 clo-6 mx-auto">
+          <button class="btn btn-info" type="button">Button</button>
+          <button class="btn btn-success" type="button">Button</button>
+        </div>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button class="btn btn-info me-md-2" type="button">Button</button>
+          <button class="btn btn-warning" type="button">Button</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ///////////////////////////////////-END-///////////////////////////////////// -->
+
+    <!-- Button groups -->
+
+    <h2 class="display-3 mt-5"><small>2.</small> Button groups</h2>
+
+    <h2 class="display-4 mt-5"><small>2.1</small> Example</h2>
+
+    <div class="card p-3 bg-light">
+      <div class="container mb-3">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary">Left</button>
+          <button type="button" class="btn btn-primary">Middle</button>
+          <button type="button" class="btn btn-primary">Right</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class=btn-group">
+          <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+          <a href="#" class="btn btn-primary">Link</a>
+          <a href="#" class="btn btn-primary">Link</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mixed & Outlined styles  -->
+
+    <h2 class="display-4 mt-5"><small>2.2</small> Mixed & Outlined styles</h2>
+
+    <div class="card p-3 bg-light">
+      <!-- Mixed styles -->
+      <div class="container mb-3">
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+          <button type="button" class="btn btn-danger">Left</button>
+          <button type="button" class="btn btn-warning">Middle</button>
+          <button type="button" class="btn btn-success">Right</button>
+        </div>
+      </div>
+      <!-- Outline styles -->
+      <div class="container">
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn btn-outline-primary">Left</button>
+          <button type="button" class="btn btn-outline-primary">
+            Middle
+          </button>
+          <button type="button" class="btn btn-outline-primary">Right</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Checkbox and radio button groups 
+ -->
+
+    <h2 class="display-4 mt-5">
+      <small>2.3</small> Checkbox and radio button groups
+    </h2>
+
+    <div class="card p-3 bg-light">
+      <!-- Check button group -->
+      <div class="container mb-3">
+        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+          <!-- type="checkbox" class="btn-check"id="btncheck1" autocomplete="off" -->
+          <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
+          <label class="btn btn-outline-primary" for="btncheck1">JAVA</label>
+
+          <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
+          <label class="btn btn-outline-primary" for="btncheck2">PHP</label>
+
+          <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
+          <label class="btn btn-outline-primary" for="btncheck3">REACT NATIVE</label>
+        </div>
+      </div>
+
+      <!-- Radio button groups -->
+      <div class="container">
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked />
+          <label class="btn btn-outline-primary" for="btnradio1">Under Graduate</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+          <label class="btn btn-outline-primary" for="btnradio2">Graduate</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
+          <label class="btn btn-outline-primary" for="btnradio3">Master</label>
+        </div>
+      </div>
+    </div>
+    <!--? Container End -->
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

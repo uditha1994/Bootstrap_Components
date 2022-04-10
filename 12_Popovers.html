@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="font/bootstrap-icons.css" />
+  <title>Popovers</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+  <header>
+    <h1 class="text-center display-3">
+      <strong>Bootstrap Components</strong>
+    </h1>
+    <h1 class="text-center display-1">
+      <strong>Popovers</strong>
+    </h1>
+  </header>
+
+  <div class="container">
+
+    <h2 class="display-4 mt-5"><small>1.</small> Example</h2>
+
+    <button type="button" class="btn btn-lg btn-danger">
+      Click to toggle popover
+    </button>
+
+    <!-- Four directions  -->
+
+    <h2 class="display-4 mt-5"><small>2.</small>Four directions</h2>
+
+    <!-- top  -->
+    <div class="d-flex flex-column justify-content-around" style="height: 500px">
+      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+        data-bs-placement="" data-bs-content="Top popover"
+        title="Popover title"
+      >
+        Popover on top
+      </button>
+
+      <!-- right -->
+      <button type="button" class="btn btn-info" data-bs-container="body" data-bs-toggle="popover" data-bs-placement=""
+        data-bs-content="Right popover">
+        Popover on right
+      </button>
+      <!-- bottom -->
+      <button type="button" class="btn btn-warning" data-bs-container="body" data-bs-toggle="popover"
+        data-bs-placement="" data-bs-content="Bottom popover">
+        Popover on bottom
+      </button>
+      <!-- left -->
+      <button type="button" class="btn btn-success" data-bs-container="body" data-bs-toggle="popover"
+        data-bs-placement="" data-bs-content="Left popover">
+        Popover on left
+      </button>
+    </div>
+
+    <!--todo: Dismiss on next click -->
+    <h2 class="display-4 mt-5"><small>3.</small>Dismiss on next click</h2>
+
+    <!--  data-bs-trigger="focus" -->
+
+    <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-trigger="focus" data-bs-toggle="popover" title="Dismissible popover"
+      data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+    <!--todo: Disabled elements  -->
+    <h2 class="display-4 mt-5"><small>4.</small>Disabled elements</h2>
+
+    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-content="Disabled popover">
+      <button class="btn btn-primary" type="button" disabled>
+        Disabled button
+      </button>
+    </span>
+    <!--? Container End -->
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    var popoverTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="popover"]')
+    );
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+  </script>
+</body>
+
+</html>
